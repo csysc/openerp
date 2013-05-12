@@ -1,0 +1,530 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* csysc_cp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-20121011-233149\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-17 04:00+0000\n"
+"PO-Revision-Date: 2013-02-17 04:00+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: csysc_cp
+#: field:csysccpmain,name:0
+#: field:csyscmeasuredata,Meas_words:0
+msgid "Title"
+msgstr "Megnevezés"
+
+#. module: csysc_cp
+#: field:csysccprow,Cp_id:0
+#: field:csyscmeasuredata,Cp_id:0
+msgid "Parent CP"
+msgstr "Szülő CP"
+
+#. module: csysc_cp
+#: view:csysccpmain:0
+msgid "Group By..."
+msgstr "Csoportosítás..."
+
+#. module: csysc_cp
+#: field:csyscunits,name:0
+msgid "shape"
+msgstr "Alak"
+
+#. module: csysc_cp
+#: help:csysccprow,Measuring_tool:0
+#: help:csyscmeasuredata,Measuring_tool:0
+msgid "Equipmnet of the measuring"
+msgstr "Mérőeszköz"
+
+#. module: csysc_cp
+#: help:csyscunits,name:0
+msgid "Length, diameter, hardness, time...etc"
+msgstr "Hossz, átmérő, keménység, idő...stb"
+
+#. module: csysc_cp
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu_dimform
+msgid "CP unit type"
+msgstr "CP egységg típus"
+
+#. module: csysc_cp
+#: model:ir.actions.act_window,name:csysc_cp.csyscmeasuredata_form
+#: model:ir.actions.act_window,name:csysc_cp.csyscmeasuredata_tree
+msgid "csyscmeasuredata"
+msgstr "Csyscmeasuredata"
+
+#. module: csysc_cp
+#: field:csysccapacityws,Workcenter_start:0
+msgid "Planned Start"
+msgstr "Tervezett Indítás"
+
+#. module: csysc_cp
+#: code:addons/csysc_cp/csysc_cp.py:161
+#, python-format
+msgid "CSYSC uzenet!"
+msgstr "CSYSC uzenet!"
+
+#. module: csysc_cp
+#: field:csysccprow,Measuring_tool:0
+#: field:csyscmeasuredata,Measuring_tool:0
+msgid "Measuring_tool"
+msgstr "Mérőeszköz"
+
+#. module: csysc_cp
+#: model:ir.model,name:csysc_cp.model_csyscmeasuredata
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu_measuredash
+msgid "Measured data"
+msgstr "Mért eredmény"
+
+#. module: csysc_cp
+#: field:csysccapacityws,Capacity_from_count_down:0
+msgid "Maximum capacity"
+msgstr "Maximum kapacítás"
+
+#. module: csysc_cp
+#: help:csysccpmain,active:0
+msgid "If the active field is set to False, it will allow you to hide the controll plan without removing it."
+msgstr "Ha a mezőt False értékre állítja, akkor a controll plan elrejthető annak törlése nélkűl."
+
+#. module: csysc_cp
+#: view:csyscunit.type:0
+msgid "Dimension Units"
+msgstr "Méret mértékegység"
+
+#. module: csysc_cp
+#: field:csysccpmain,szam:0
+msgid "Value"
+msgstr "Érték"
+
+#. module: csysc_cp
+#: field:csyscunit.type,name:0
+msgid "Unit of dimension"
+msgstr "Mértékegység egység"
+
+#. module: csysc_cp
+#: field:csysccpmain,CP_lines:0
+#: field:csyscmeasuredata,CP_lines:0
+msgid "Controll Plan id"
+msgstr "Controll Plan id"
+
+#. module: csysc_cp
+#: help:csysccprow,Dimension2:0
+#: help:csyscmeasuredata,Dimension2:0
+msgid "The parts other dimesion, example M6, or Ok, "
+msgstr "Az alkatrész egyéb méretei pl. M6, or Ok, "
+
+#. module: csysc_cp
+#: view:csysccpmain:0
+msgid "Links"
+msgstr "Linkek"
+
+#. module: csysc_cp
+#: field:csyscmeasuredata,Meas_value:0
+msgid "Measured Value"
+msgstr "Mért értékek"
+
+#. module: csysc_cp
+#: field:csysccprow,ToleranceMinus:0
+#: field:csyscmeasuredata,ToleranceMinus:0
+msgid "Tolerance_N"
+msgstr "Tűrés -"
+
+#. module: csysc_cp
+#: view:csysccpmain:0
+#: report:csysccpmain.cpreport:0
+#: view:csysccprow:0
+#: model:ir.actions.report.xml,name:csysc_cp.csysc_cpreport
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu_cpform
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu_cpform_sub1
+msgid "Controll Plan"
+msgstr "Controll Plan"
+
+#. module: csysc_cp
+#: help:csyscmtooltypes,name:0
+msgid "Calipper,3d..etc"
+msgstr "Tolómérő,3d..stb"
+
+#. module: csysc_cp
+#: model:ir.actions.act_window,name:csysc_cp.csyscmeasuringtool_tree
+#: model:ir.model,name:csysc_cp.model_csyscmeasuringtool
+msgid "csyscmeasuringtool"
+msgstr "csyscmeasuringtool"
+
+#. module: csysc_cp
+#: help:csyscmeasuringtool,calibration_date:0
+#: help:csyscmeasuringtool,calibration_enddate:0
+msgid "When the equipment calibrated"
+msgstr "Amikor a mérőszköz kalibrálva volt"
+
+#. module: csysc_cp
+#: model:ir.actions.act_window,name:csysc_cp.csyscunits_tree
+msgid "csyscunits"
+msgstr "csyscunits"
+
+#. module: csysc_cp
+#: field:csysccprow,Dimension2:0
+#: field:csyscmeasuredata,Dimension2:0
+msgid "Dimeension other"
+msgstr "Egyéb méretek"
+
+#. module: csysc_cp
+#: help:csyscmeasuringtool,item_no:0
+msgid "Measuring tool factory id "
+msgstr "Mérőeszköz gyári száma"
+
+#. module: csysc_cp
+#: field:csyscunits,csyscunit_type:0
+msgid "Measure Unit"
+msgstr "Méret mértékegység"
+
+#. module: csysc_cp
+#: help:csysccprow,Dimension1:0
+#: help:csyscmeasuredata,Dimension1:0
+msgid "The parts numeric dimension"
+msgstr "Az alaktrész számmal leírható mérete"
+
+#. module: csysc_cp
+#: model:ir.model,name:csysc_cp.model_csysccprow
+msgid "Controll Plan row"
+msgstr "Controll Plan sora"
+
+#. module: csysc_cp
+#: field:csysccprow,units_id:0
+msgid "unit"
+msgstr "Egység"
+
+#. module: csysc_cp
+#: field:csysccapacityrow,Cp_id:0
+msgid "Parent Capacity"
+msgstr "Szülő kapacítása"
+
+#. module: csysc_cp
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu_cp_settings
+msgid "Settings"
+msgstr "Beállítások"
+
+#. module: csysc_cp
+#: help:csysccapacitysetup,Capacity_UOM:0
+msgid "Base unit of capacity calculation"
+msgstr "Akapacítás számítás alap mértékegysége"
+
+#. module: csysc_cp
+#: view:csysccpmain:0
+msgid "Execute something"
+msgstr "Hajts végre valamit"
+
+#. module: csysc_cp
+#: field:csyscmeasuringtool,range:0
+msgid "Range"
+msgstr "Tartomány"
+
+#. module: csysc_cp
+#: view:csysccpmain:0
+msgid "Cp view"
+msgstr "Cp nézet"
+
+#. module: csysc_cp
+#: view:csyscmeasuringtool:0
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu_Meq_main
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu_Meq_sub
+msgid "Measuring Equipment"
+msgstr "Mérőeszköz"
+
+#. module: csysc_cp
+#: field:csysccprow,Dimension1:0
+#: field:csyscmeasuredata,Dimension1:0
+msgid "Dimension"
+msgstr "Méret"
+
+#. module: csysc_cp
+#: model:ir.actions.act_window,name:csysc_cp.csysccpmain_form
+msgid "csysccpmain"
+msgstr "csysccpmain"
+
+#. module: csysc_cp
+#: field:csyscmeasuringtool,calibration_date:0
+msgid "Calibration Date"
+msgstr "Kalibrálási Dátum"
+
+#. module: csysc_cp
+#: model:ir.model,name:csysc_cp.model_csyscunit_type
+#: model:ir.model,name:csysc_cp.model_csyscunits
+msgid "Aplicable dimension units"
+msgstr "Alkalmazandó méret egységek"
+
+#. module: csysc_cp
+#: view:product.product:0
+msgid "Descriptions"
+msgstr "Leírások"
+
+#. module: csysc_cp
+#: help:csyscunit.type,name:0
+msgid "mm, cm, HRC, sec ...etc"
+msgstr "mm, cm, HRC, sec ...etc"
+
+#. module: csysc_cp
+#: field:csysccapacitysetup,Capacity:0
+msgid "Capacity"
+msgstr "Kapacítás"
+
+#. module: csysc_cp
+#: view:csyscunits:0
+msgid "Dimensions"
+msgstr "Méretek"
+
+#. module: csysc_cp
+#: field:csysccprow,Cp_List_No:0
+#: field:csyscmeasuredata,Cp_List_No:0
+msgid "No"
+msgstr "No"
+
+#. module: csysc_cp
+#: model:ir.model,name:csysc_cp.model_product_measuringtool
+msgid "product.measuringtool"
+msgstr "product.measuringtool"
+
+#. module: csysc_cp
+#: view:csyscmtooltypes:0
+msgid "Measuring Equipment types"
+msgstr "Mérőeszköz típusok"
+
+#. module: csysc_cp
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu_processdash
+msgid "Process Controll"
+msgstr "Process Controll"
+
+#. module: csysc_cp
+#: report:csysccpmain.cpreport:0
+msgid "........."
+msgstr "........."
+
+#. module: csysc_cp
+#: field:csyscmeasuringtool,type:0
+msgid "Equipment type"
+msgstr "Eszköz típus"
+
+#. module: csysc_cp
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu
+msgid "CsysC"
+msgstr "CsysC"
+
+#. module: csysc_cp
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu_Meq_measuringtoolform
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu_measuringtoolform
+msgid "Measuring Equipment Types"
+msgstr "Mérőeszköz típusok"
+
+#. module: csysc_cp
+#: field:csysccpmain,active:0
+msgid "Active"
+msgstr "Aktív"
+
+#. module: csysc_cp
+#: model:ir.model,name:csysc_cp.model_csysccapacityrow
+#: model:ir.model,name:csysc_cp.model_csysccpmain
+msgid "Controll Plan object"
+msgstr "Controll Plan object"
+
+#. module: csysc_cp
+#: field:csysccpmain,CP_rev_date:0
+msgid "Date"
+msgstr "Dátum"
+
+#. module: csysc_cp
+#: field:csyscmeasuredata,Cp_row_id:0
+msgid "Parent row"
+msgstr "Szülő sor"
+
+#. module: csysc_cp
+#: help:csysccprow,units_id:0
+msgid "Unit of the dimension "
+msgstr "Méret egysége"
+
+#. module: csysc_cp
+#: model:ir.ui.menu,name:csysc_cp.CsysCmain_menu_unitform
+msgid "CP units"
+msgstr "CP egység"
+
+#. module: csysc_cp
+#: field:csysccapacityws,Cap_child_row_id:0
+#: field:csysccpmain,CP_child_row_id:0
+#: model:ir.actions.act_window,name:csysc_cp.csysc_cplines_form
+#: model:ir.actions.act_window,name:csysc_cp.csysccprow_form
+#: model:ir.actions.act_window,name:csysc_cp.csysccprow_tree
+msgid "csysccprow"
+msgstr "csysccprow"
+
+#. module: csysc_cp
+#: field:csyscmeasuringtool,item_no:0
+msgid "Measuring tool No"
+msgstr "Mérőeszköz száma"
+
+#. module: csysc_cp
+#: view:csysccpmain:0
+msgid "Inactive"
+msgstr "Inaktív"
+
+#. module: csysc_cp
+#: field:csysccapacityws,Capacity_count_down:0
+msgid "Remain capacity"
+msgstr "Szabad kapacítás"
+
+#. module: csysc_cp
+#: help:csysccprow,TolerancePlus:0
+#: help:csyscmeasuredata,TolerancePlus:0
+msgid "Just the tolerance not the dimesion example -0,15 or +0,25 or 0"
+msgstr "Ezek csak tűrés és nem méret példák: -0,15 vagy +0,25 vagy 0"
+
+#. module: csysc_cp
+#: model:ir.model,name:csysc_cp.model_csysccapacityws
+msgid "Csysc Capacity module production rows"
+msgstr "Csysc kapacítás számító modul termelési sorai"
+
+#. module: csysc_cp
+#: help:csysccprow,Cp_List_No:0
+#: help:csyscmeasuredata,Cp_List_No:0
+msgid "Gives the number when displaying a list of Controll plan lines."
+msgstr "Sorszám, ami a Controll Plan sorának elején látható"
+
+#. module: csysc_cp
+#: field:csyscmeasuringtool,Resp:0
+msgid "Responsible"
+msgstr "Felelős"
+
+#. module: csysc_cp
+#: view:csysccpmain:0
+msgid "Controlled points"
+msgstr "Szabályozott pontok"
+
+#. module: csysc_cp
+#: view:csysccpmain:0
+msgid "Parner"
+msgstr "Partner"
+
+#. module: csysc_cp
+#: field:csysccapacitysetup,workcenter_id:0
+#: field:csysccapacityws,workcenter_id:0
+msgid "Work Center"
+msgstr "Munkaállomás"
+
+#. module: csysc_cp
+#: field:csysccapacityws,working_hours:0
+msgid "Working hours"
+msgstr "Munakórák"
+
+#. module: csysc_cp
+#: field:csysccapacityrow,CP_product_id:0
+#: field:csysccpmain,CP_product_id:0
+#: field:csyscmeasuringtool,product_id:0
+#: model:ir.model,name:csysc_cp.model_product_product
+msgid "Product"
+msgstr "Termék"
+
+#. module: csysc_cp
+#: field:csysccapacityrow,name:0
+#: field:csysccapacitysetup,name:0
+#: field:csysccapacityws,name:0
+msgid "Description"
+msgstr "Leírás"
+
+#. module: csysc_cp
+#: view:csyscmeasuredata:0
+msgid "Measure view"
+msgstr "Méret nézet"
+
+#. module: csysc_cp
+#: field:csyscmtooltypes,name:0
+msgid "Measuring tool name:"
+msgstr "Mérőeszköz neve"
+
+#. module: csysc_cp
+#: view:product.product:0
+msgid "Meas. Information"
+msgstr "Mér.eszk. infó"
+
+#. module: csysc_cp
+#: field:csysccapacitysetup,Capacity_UOM:0
+msgid "Product UOM"
+msgstr "Termék UOM"
+
+#. module: csysc_cp
+#: field:csyscmeasuringtool,calibration_enddate:0
+msgid "Calibration expired Date"
+msgstr "A kalibrálás lejárati határideje"
+
+#. module: csysc_cp
+#: field:csysccprow,TolerancePlus:0
+#: field:csyscmeasuredata,TolerancePlus:0
+msgid "Tolerance_P"
+msgstr "Tűrés +"
+
+#. module: csysc_cp
+#: model:ir.model,name:csysc_cp.model_csysc_meatypes
+#: model:ir.model,name:csysc_cp.model_csyscmtooltypes
+msgid "name of the measuring equipment"
+msgstr "A mérőeszköz megnevezése"
+
+#. module: csysc_cp
+#: field:csysccpmain,partner_id:0
+msgid "Customer"
+msgstr "Vevő"
+
+#. module: csysc_cp
+#: field:csysccpmain,CP_supplier_key_contact:0
+#: field:csysccprow,name:0
+#: field:csysccprow,unit:0
+msgid "Name"
+msgstr "Név"
+
+#. module: csysc_cp
+#: field:product.product,measuring_id:0
+msgid "Eq. data:"
+msgstr "Eszk. adatok:"
+
+#. module: csysc_cp
+#: help:csysccprow,ToleranceMinus:0
+#: help:csyscmeasuredata,ToleranceMinus:0
+msgid "Just the tolerance not the dimesion example -0,35 or +0,15 or 0"
+msgstr "Ezek csak tűrés és nem méret példák: -0,15 vagy +0,25 vagy 0"
+
+#. module: csysc_cp
+#: field:product.product,is_meatool:0
+msgid "Is Meatool"
+msgstr "Ez Mérőeszköz"
+
+#. module: csysc_cp
+#: model:ir.actions.act_window,name:csysc_cp.csyscmtooltypes_tree
+msgid "csyscmtooltypes"
+msgstr "csyscmtooltypes"
+
+#. module: csysc_cp
+#: model:ir.actions.act_window,name:csysc_cp.csyscunit_type_tree
+msgid "csyscunit.type"
+msgstr "csyscunit.type"
+
+#. module: csysc_cp
+#: view:csysccapacitysetup:0
+msgid "Capacity view"
+msgstr "Kapacítás nézet"
+
+#. module: csysc_cp
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Hiba! Érvénytelen vonalkód."
+
+#. module: csysc_cp
+#: model:ir.ui.menu,name:csysc_cp.CsysC_capacity_menu_processdash
+msgid "Capacity Controll"
+msgstr "Kapacítás vezérlés"
+
+#. module: csysc_cp
+#: model:ir.model,name:csysc_cp.model_csysccapacitysetup
+msgid "Csysc Capacity module setup"
+msgstr "Csysc Kapacítás számítás beállítása"
+

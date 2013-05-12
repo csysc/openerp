@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<report
+auto="False"
+id="csysc_cpreport"
+model="csysccpmain"
+name="csysccpmain.cpreport"
+rml="csysc_cp/report/cpreport.rml"
+string="Controll Plan"
+attachment_use="1"
+multi="False"/>
+</data>
+</openerp>
