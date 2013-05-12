@@ -8,4 +8,5 @@
 *Project Items:
 *csysc_sales_order_row_tax 
   *Features: Add a new record for the sales order report.
+  *Tested at: Openerp 6.1
   *Know bugs:
