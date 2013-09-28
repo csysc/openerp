@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+	<!-- Seetings/customization/Low level objet / reports rml header off és reload from attach off -->
+	<!-- 3 lapos számla létrehozása -->
+		
+		<report auto="False" 
+				id="account_print_3pg_invoice" 
+				model="account.invoice"
+				name="account.account_print_3pg_invoice" 
+				rml="csysc_extra_reports/report/a_p_i_3pg_master.rml" 
+				string="Eredeti számla nyomtatása" 
+            	attachment="(object.state in ('open','paid')) and ('INV'+(object.number or '').replace('/','')+'.pdf')"
+            	attachment_use="True"
+            	/>
+            	
+		<report auto="False" 
+				id="account_print_1pg_invoice" 
+				model="account.invoice"
+				name="account.account_print_1pg_invoice" 
+				rml="csysc_extra_reports/report/a_p_i_1pg_copy.rml" 
+				string="Számla másolat nyomtatása" 
+            	attachment="(object.state in ('open','paid')) and ('INV'+(object.number or '').replace('/','')+'.pdf')"
+            	attachment_use="True"
+            	/>            	
+            	
+            	
+	<!-- gomb léterhozás -->            
+   <!-- <record id="invoice_form_inh" model="ir.ui.view">
+            <field name="name">account.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account.invoice_form"/>            
+            <field name="arch" type="xml">
+  			<button name="%(account.action_account_invoice_refund)d" position="after"> 
+						<button name="%(account_print_nhm_invoice)d" string="Print Invoice" type="action" icon="gtk-print" states="open,paid,proforma,sale,proforma2"/> 									                     
+			</button>  					
+			</field>		
+        </record> 		-->	
+		
+		
+
+	
+	
+				 
+    </data>
+</openerp>

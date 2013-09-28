@@ -1,0 +1,24 @@
+<openerp>
+    <data>     		
+        <record model="ir.ui.view" id="invoice_form">	
+            <field name="name">csyscaccountinv.inhform</field>
+            <field name="model">account.invoice</field>
+            <field name="type">form</field>       
+            <field name="inherit_id" ref="account.invoice_form"/>
+             <field name="arch" type="xml">		
+            	<field name="number" position="after">
+            			<field name="Cash_accounting"/> 
+						<field name="is_storno" attrs="{'invisible':1}"/>  	            			
+            			<field name="Storno" attrs="{'invisible':[('is_storno','=',False)]}"/>  
+             			<newline/>        						      	
+						<field name="is_huf" attrs="{'invisible':1}"/>  									                         		 
+						<field name="exchng_value" attrs="{'invisible':[('is_huf','=',True)]}"/> 																                     			
+				</field>
+            	
+            	<field name="date_invoice" position="after">					      	
+						<field name="exec_date"/> 									                         		 															                     			
+				</field>								
+			</field>	
+        </record>
+    </data>
+</openerp>

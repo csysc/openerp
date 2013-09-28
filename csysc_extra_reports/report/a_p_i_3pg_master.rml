@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+<document filename="3pg_copy.pdf">
+  <!-- <template pageSize="(595.0,842.0)" title="Test" author="Laszlo Kozma" allowSplitting="20"> -->
+  <template title="Invoice" author="Laszlo Kozma" allowSplitting="20">	  
+    <pageTemplate id="first">
+    
+    <pageGraphics>
+<images>
+      <image name="logo.jpg">
+		  <!-- ide tedd a bináris kép adatot-->
+</image>
+    </images>
+		<lines> 15 65 574 65</lines>	
+		<lineMode width="20"/>
+
+	<!--	<drawString x="145.0mm" y="48.0mm" >Átvette / dátum:</drawString>	
+		<drawString x="165.0mm" y="38.0mm" >BH:</drawString>	
+		<drawString x="165.0mm" y="28.0mm" >Aláírás:</drawString>		-->
+		<fill color="black"/>
+		<setFont name="Arial" size="7"/>
+				
+		<drawString x="8.0mm" y="18.0mm" >Telefon: / Phone:</drawString>	
+		<drawString x="8.0mm" y="15.0mm" ></drawString>	
+		<drawString x="30.0mm" y="18.0mm" >Fax: / Fax:</drawString>	
+		<drawString x="30.0mm" y="15.0mm" ></drawString>		
+			
+		<drawString x="52.0mm" y="18.0mm" >Adószám: / VAT:</drawString>	
+		<drawString x="52.0mm" y="15.0mm" >xxxxxxxx-x-xx</drawString>			
+		
+		<drawString x="74.0mm" y="18.0mm" >EU Adószám: / EU VAT:</drawString>	
+		<drawString x="74.0mm" y="15.0mm" >HUxxxxxxxx</drawString>	
+		
+		<drawString x="105.0mm" y="18.0mm" >Cégjegyzékszám: / Company Id.:</drawString>	
+		<drawString x="105.0mm" y="15.0mm" ></drawString>	
+		<drawString x="145.0mm" y="18.0mm" ></drawString>	
+		<drawString x="145.0mm" y="15.0mm" ></drawString>	
+		
+
+		<drawString x="145.0mm" y="12.0mm"> </drawString>			
+		<drawString x="8.0mm" y="9.0mm"></drawString>
+		<drawString x="8.0mm" y="6.0mm">HUF: </drawString>	
+		<drawString x="8.0mm" y="3.0mm">SWIFT kód: </drawString>				
+		<drawString x="74.0mm" y="9.0mm">Unicredit Bank</drawString>
+		<drawString x="74.0mm" y="6.0mm">EUR: </drawString>	
+		<drawString x="74.0mm" y="3.0mm">SWIFT kód: </drawString>		
+
+		<drawString x="10.5cm" y="38.0mm">Oldal: <pageNumber/> </drawString>
+
+		<drawString x="8.0mm" y="30.0mm" >Kerekített értékek: Összes Nettó / Áfaérték / Összes Bruttó </drawString>
+		<drawString x="8.0mm" y="27.0mm" >A számla a tönbször módosított 24/1995 (XI.22) PM rendeletnek megfelel.</drawString>		
+		<drawString x="8.0mm" y="24.0mm" >A számla Company System Controll Kft Openerp moduljával készült. csysc@csysc.eu www.csysc.eu</drawString>
+		<fill color="black"/>
+	
+	</pageGraphics>				
+      <frame id="first" x1="15.0" y1="62.0" width="539" height="758"/> <!--42 -->
+    </pageTemplate>
+
+    
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table_Partner_Address">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table_Invoice_General_Header">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    <!--  <lineStylekind="GRID"colorName="silver"/>
+      <lineStylekind="LINEBELOW"colorName="black" />   -->
+      
+      <!--   <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="0,0" stop="0,-1"/>
+      
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#e6e6e6" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="2,-1" stop="2,-1"/> -->
+    </blockTableStyle>
+    <blockTableStyle id="Table_General_Detail_Content">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+     <!-- <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#e6e6e6" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#e6e6e6" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#e6e6e6" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="2,-1" stop="2,-1"/> -->
+    </blockTableStyle>
+    <blockTableStyle id="Table7">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="6,-1" stop="6,-1"/>
+	  <lineStyle kind="LINEBELOW" colorName="#000000" start="7,-1" stop="7,-1"/>    
+	  <lineStyle kind="LINEBELOW" colorName="#000000" start="8,-1" stop="8,-1"/>  
+    </blockTableStyle>
+    <blockTableStyle id="Table8">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="4,-1" stop="4,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="6,-1" stop="6,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="7,-1" stop="7,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="8,-1" stop="8,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="TableTax">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="3,-1" stop="3,-1"/>
+    </blockTableStyle>    
+    
+    
+    <blockTableStyle id="Table10">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,2" stop="1,2"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,2" stop="2,2"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table9">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>      
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#e6e6e6" start="3,-1" stop="3,-1"/>      
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" rightIndent="0.0" leftIndent="-3.0" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P2" rightIndent="0.0" leftIndent="-3.0" fontName="Helvetica-Oblique" fontSize="12.0" leading="15" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="Standard" fontName="Helvetica"/>
+    <paraStyle name="Text body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Table Contents" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Table Heading" fontName="Helvetica" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Helvetica" fontSize="10.0" leading="13" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="15.0" leading="19" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_header" fontName="Helvetica-Bold" fontSize="12.0" leading="15" alignment="LEFT" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_default_8" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="Footer" fontName="Helvetica"/>
+    <paraStyle name="Horizontal Line" fontName="Helvetica" fontSize="6.0" leading="8" spaceBefore="0.0" spaceAfter="14.0"/>
+    <paraStyle name="Heading 9" fontName="Helvetica-Bold" fontSize="75%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_General" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_Details" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_default_Bold_8" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_tblheader_General_Centre" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="CENTER" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_General_Right" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="RIGHT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_General_Left" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="6.0" spaceAfter="6.0"/>
+        
+    <paraStyle name="terp_tblheader_Details_Centre" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="CENTER" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_Details_Right" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_tblheader_Details_Left" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="6.0" spaceAfter="6.0"/>
+        
+    <paraStyle name="terp_default_Right_8" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="8.0" leading="10" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Centre_8" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="8.0" leading="10" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_header_Right" fontName="Helvetica-Bold" fontSize="15.0" leading="19" alignment="LEFT" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_header_Centre" fontName="Helvetica-Bold" fontSize="12.0" leading="15" alignment="CENTER" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_default_address" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="10.0" leading="13" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    
+    <paraStyle name="terp_default_9" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    
+    <paraStyle name="terp_default_Bold_9" rightIndent="0.0" leftIndent="-3.0" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Centre_9" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="9.0" leading="11" alignment="CENTER" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Right_9" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_Bold_Right_9" rightIndent="0.0" leftIndent="-3.0" fontName="Helvetica-Bold" fontSize="9.0" leading="11" alignment="RIGHT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_2" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="2.0" leading="3" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="terp_default_White_2" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="2.0" leading="3" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0" textColor="#ffffff"/>
+    <paraStyle name="terp_default_Note" rightIndent="0.0" leftIndent="9.0" fontName="Helvetica-Oblique" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="Table" fontName="Helvetica" fontSize="10.0" leading="13" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="User Index 10" rightIndent="0.0" leftIndent="127.0" fontName="Helvetica"/>
+    <paraStyle name="Preformatted Text" fontName="Helvetica" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="0.0"/>
+    
+    <!-- Csysc style-->
+    <paraStyle name="csysc_invoice_item_header" 		fontName="Helvetica-Bold" fontSize="8.0" leading="9" alignment="LEFT" spaceBefore="5.0" spaceAfter="5.0"/>    
+    <paraStyle name="csysc_invoice_item_header_center" 	fontName="Helvetica-Bold" fontSize="8.0" leading="9" alignment="CENTER" spaceBefore="5.0" spaceAfter="5.0"/>  
+    
+    
+   
+  </stylesheet>
+  <story>
+  <pto>	  
+  <!-- lapdobáshoz a fejléc -->
+  <pto_header>
+    <para style="terp_default_8">[[repeatIn(objects,'o')]]</para>
+    <para style="terp_default_8">[[ setLang(o.partner_id.lang) ]]</para>
+       
+    
+	<blockTable colWidths="120.0,52.0,52.0,52.0,52.0,52.0,52.0,52.1,52.0" style="Table7">
+      <tr>
+        <td>
+          <para style="csysc_invoice_item_header">Megnevezés</para>       
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header">ListaÁr</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header_center">Kedv.%</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header">Kedv. EgységÁr Nettó</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header">Mennyiség</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header">Összes Nettó</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header_center">Áfa %</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header">Áfaérték</para>
+        </td>        
+        <td>
+          <para style="csysc_invoice_item_header">Összes Bruttó</para>
+        </td>             
+      </tr>
+    </blockTable>    
+    
+    
+  </pto_header> 	
+  
+    <para style="terp_default_8">[[ setLang(o.partner_id.lang) ]]</para>  	  
+	  
+	  
+         <illustration height="27.0" width="87.0">
+            <image x="5.5mm" y="0" file="logo.jpg" height="27.0" width="87.0"/>
+          </illustration>	  
+
+    <blockTable colWidths="270.0,200.0,4.0" style="Table_Partner_Address">
+      <tr>	  
+        <td>    
+		  <para style="terp_default_Bold_9">Eladó:</para>       
+          <para style="terp_default_8"></para>
+          <para style="terp_default_8"></para>
+          <para style="terp_default_8"></para>
+          <para style="terp_default_8">Adószám    / VAT   :  </para>
+          <para style="terp_default_8">EU Adószám / EU VAT: </para>          
+          <para style="terp_default_8">Banki adatok: </para>
+          <para style="terp_default_8">Fax: </para>
+        </td>
+        <td>
+          <para style="terp_default_Bold_9">Vevő: </para> 
+          <para style="P2">[[ (o.partner_id and o.partner_id.title and o.partner_id.title.name) or '' ]][[ (o.partner_id and o.partner_id.name) or '' ]]</para>          
+          <para style="terp_default_8">[[ (o.address_invoice_id and o.address_invoice_id.street2) or removeParentNode('para') ]]</para>         
+          <para style="terp_default_8">[[ (o.address_invoice_id  and o.address_invoice_id.street) or '' ]]</para>
+          <para style="terp_default_8">[[ (o.address_invoice_id and o.address_invoice_id.zip) or '' ]] [[ (o.address_invoice_id and o.address_invoice_id.city) or '' ]]</para>
+          <para style="terp_default_8">Adószám : [[ (o.partner_id.tax_id)]]</para>
+          <para style="terp_default_8">[[ (o.address_invoice_id and o.address_invoice_id.state_id and o.address_invoice_id.state_id.name) or removeParentNode('para') ]]</para>
+          <para style="terp_default_8">[[ (o.address_invoice_id and o.address_invoice_id.country_id and o.address_invoice_id.country_id.name) or '' ]]</para>
+          <para style="terp_default_8">
+            <font color="white"> </font>
+          </para>
+          <para style="terp_default_8">Tel. : [[ (o.address_invoice_id and o.address_invoice_id.phone) or removeParentNode('para')  ]]</para>
+          <para style="terp_default_8">Fax : [[ (o.address_invoice_id and o.address_invoice_id.fax) or removeParentNode('para') ]]</para>
+          <para style="terp_default_8">VAT : [[ (o.partner_id and o.partner_id.vat) or removeParentNode('para') ]]</para>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </blockTable>
+      
+        
+    <para style="terp_header">Számla [[ (o.type == 'out_invoice'  or removeParentNode('para')) and '']] [[ o.number ]] </para>       
+    <para style="terp_header">Első eredeti példány.[[ (o.type == 'out_invoice'  or removeParentNode('para')) and '']] </para>       
+    
+    <para style="terp_header">PRO-FORMA [[ ((o.type == 'out_invoice' and o.state == 'proforma2') or removeParentNode('para')) and ''  ]]</para>
+        
+    <para style="terp_header">Számlatervezet [[ ((o.type == 'out_invoice' and o.state == 'draft') or removeParentNode('para')) and ''  ]]</para>
+    <para style="terp_header">Cancelled Invoice [[ ((o.type == 'out_invoice' and o.state == 'cancel') or removeParentNode('para')) and '' ]][[ o.number ]]</para>
+    <para style="terp_header">Sztornó vagy helyesbítő számla [[ (o.type=='out_refund' or removeParentNode('para')) and '' ]][[ o.number ]] hivatkozás: [[o.origin]]</para>
+    <para style="terp_header">Supplier Refund [[ (o.type=='in_refund' or removeParentNode('para')) and '' ]][[ o.number ]]</para>
+    <para style="terp_header">Supplier Invoice [[ (o.type=='in_invoice' or removeParentNode('para')) and '' ]][[ o.number ]]</para>
+    
+	<para style="terp_default_Bold_8">Ez a számla pénzforgalmi elszámolás alá tartozik. [[ (o.Cash_accounting or removeParentNode('para')) and '' ]] </para>
+    
+    <para style="terp_default_8">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="137.0,137.0,137.0,137.0" style="Table_Invoice_General_Header">
+      <tr>
+        <td>
+          <para style="terp_tblheader_General_Centre">Számla kelte</para>
+        </td>
+        <td>
+          <para style="terp_tblheader_General_Centre">Teljesítés ideje</para>
+        </td>        
+        <td>
+          <para style="terp_tblheader_General_Centre">Fizetési határidő</para>
+        </td>
+        <td>
+          <para style="terp_tblheader_General_Centre">Vevő hivatkozása</para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="137.0,137.0,137.0,137.0" style="Table_General_Detail_Content">
+      <tr>
+        <td>
+          <para style="terp_default_Centre_9">[[ formatLang(o.date_invoice,date=True) ]]</para>
+        </td>
+        <td>
+		<para style="terp_default_Centre_9">[[ formatLang(o.exec_date,date=True) ]]</para> 
+        </td>                
+        <td>
+          <para style="terp_default_Centre_9">[[ formatLang(o.date_due,date=True) ]]</para>
+        </td>
+        <td>
+          <para style="terp_default_Centre_9">[[ (o.address_invoice_id  and o.address_invoice_id.partner_id and o.address_invoice_id.partner_id.ref) or  ' '  ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="terp_default_8">
+      <font color="white"> </font>
+    </para>
+	<blockTable colWidths="120.0,52.0,52.0,52.0,52.0,52.0,52.0,52.1,52.0" style="Table7">
+      <tr>
+        <td>
+          <para style="csysc_invoice_item_header">Megnevezés</para>       
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header">ListaÁr</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header_center">Kedv.%</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header">Kedv. EgységÁr Nettó</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header">Mennyiség</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header">Összes Nettó</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header_center">Áfa %</para>
+        </td>
+        <td>
+          <para style="csysc_invoice_item_header">Áfaérték</para>
+        </td>        
+        <td>
+          <para style="csysc_invoice_item_header">Összes Bruttó</para>
+        </td>             
+      </tr>
+    </blockTable>    
+    
+    <!-- számlasorok -->
+    <section>
+      <para style="terp_default_2">[[repeatIn(o.invoice_line,'l')]]</para>
+	<blockTable colWidths="120.0,52.0,52.0,52.0,52.0,52.0,52.0,52.1,52.0" style="Table8">
+        <tr>
+          <td>
+            <para style="terp_default_9">[[ l.name ]]</para> <!-- Megnevezés -->
+          </td>
+          <td>
+            <para style="terp_default_9">[[ formatLang(l.price_unit)  ]] [[ o.currency_id.symbol ]]</para>  <!-- ListaÁr -->
+          </td>
+           <td>
+            <para style="terp_default_9">[[ l.discount ]]</para> <!-- Kedvezmény -->
+          </td>
+           <td>
+            <para style="terp_default_9"> [[formatLang(l.line_net_unit_price, digits=3)]] [[ o.currency_id.symbol ]]</para> <!-- Kedvezményes egység ár -->
+             
+          </td>                    
+          <td>
+            <para style="terp_default_9">[[ formatLang(l.quantity, digits=0)]][[ (l.uos_id and l.uos_id.name) or '' ]]</para> <!-- mennyiség -->
+          </td>
+          <td>
+            <para style="terp_default_9">[[ formatLang(l.price_subtotal, digits=get_digits(dp='Account')) ]][[ o.currency_id.symbol ]]</para> <!-- összes nettó -->
+          </td>
+          <td>
+            <para style="terp_default_9">[[ ', '.join([ lt.name or '' for lt in l.invoice_line_tax_id ]) ]]</para>	<!-- Áfa -->
+          </td>
+          <td>
+            <para style="terp_default_9"> [[ formatLang(l.tax_amount, digits=get_digits(dp='Account')) ]][[ o.currency_id.symbol ]]</para>	<!-- áfa érték -->
+          </td>
+          <td>
+            <para style="terp_default_Right_9"> [[ formatLang(l.line_total, digits=get_digits(dp='Account')) ]][[ o.currency_id.symbol ]]</para> <!-- összes bruttó-->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <para style="terp_default_Note">[[  format(l.note or '') or removeParentNode('tr') ]]</para>
+          </td>
+          <td>
+            <para style="terp_default_Note">
+              <font color="white"> </font>
+            </para>
+          </td>
+          <td>
+            <para style="terp_default_9">
+              <font color="white"> </font>
+            </para>
+          </td>
+          <td>
+            <para style="terp_default_Right_9">
+              <font color="white"> </font>
+            </para>
+          </td>
+          <td>
+            <para style="terp_default_Right_9">
+              <font color="white"> </font>
+            </para>
+          </td>
+          <td>
+            <para style="terp_default_Right_9">
+              <font color="white"> </font>
+            </para>
+          </td>
+          <td>
+            <para style="terp_default_Right_9">
+              <font color="white"> </font>
+            </para>
+          </td>
+        </tr>
+      </blockTable>
+    </section>
+    <blockTable colWidths="391.0,54.0,85.0" style="Table10">
+      <tr>
+        <td>
+          <para style="terp_default_8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_9">Nettó Összes:</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ formatLang(o.amount_untaxed, digits=get_digits(dp='Account')) ]][[ o.currency_id.symbol ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="terp_default_9">Adók:</para>
+        </td>
+        <td>
+          <para style="terp_default_Right_9">[[ formatLang(o.amount_tax, digits=get_digits(dp='Account'))   ]][[ o.currency_id.symbol ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="terp_default_8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="terp_tblheader_Details">Összesen:</para>
+        </td>
+        <td>
+          <para style="terp_default_Bold_Right_9">[[ formatLang(o.amount_total, digits=get_digits(dp='Account'))  ]][[ o.currency_id.symbol ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="Text body">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="85.0,85.0,85.0,85.0,5.0,35.0,165.0" rowHeights="0.8cm" style="TableTax">    <!-- "71.0,71.0,71.0,71.0"  -->
+      <tr>
+        <td>
+          <para style="terp_default_8">Adóalap </para>          
+        </td>
+        <td>
+          <para style="terp_default_8">Adó mértéke [[ o.tax_line==[] and removeParentNode('blockTable') ]]</para>
+        </td>
+        <td>
+          <para style="terp_default_8">Adó összesen</para>
+        </td>
+        <td>
+          <para style="terp_default_8">Adó összesen HUF [[ (o.is_huf==False or removeParentNode('para')) and '' ]] </para>
+        </td>
+        <td>
+
+        </td>        
+       <td>
+
+        </td>    
+        <td>
+
+        </td> 
+      </tr>
+    </blockTable>
+    <section>
+      <para style="terp_default_2">[[repeatIn(o.tax_line,'t')]]</para>
+		<blockTable colWidths="85.0,85.0,85.0,85.0,5.0,35.0,165.0" rowHeights="0.8cm" style="TableTax">    <!-- "71.0,71.0,71.0,71.0"  -->
+        <tr>
+          <td>
+            <para style="terp_default_8">[[ formatLang(t.base, digits=get_digits(dp='Account'))   ]][[ o.currency_id.symbol ]]</para>            
+          </td>
+          <td>
+            <para style="terp_default_8">[[ t.name ]]</para>
+          </td>
+          <td>
+            <para style="terp_default_8">[[  (t.tax_code_id and t.tax_code_id.notprintable) and removeParentNode('blockTable') or '' ]][[ formatLang(t.amount, digits=get_digits(dp='Account'))   ]][[ o.currency_id.symbol ]]</para>
+          </td>
+        <td>
+          <para style="terp_default_8"> [[ (o.is_huf==False or removeParentNode('para')) and '' ]]  [[o.Tax_amount_huf]]  Ft </para>
+        </td>
+        <td>
+
+        </td>        
+       <td>
+
+        </td>    
+        <td>
+
+        </td>         
+        </tr>
+      </blockTable>
+    </section>
+    <para style="terp_default_9">
+      <font color="white"> </font>
+    </para>
+    <para style="terp_default_8">Az árfolyam:  [[ (o.is_huf==False or removeParentNode('para')) and '' ]] 1 [[ o.currency_id.symbol ]] =  [[o.exchng_value]]  Ft  forrás: MNB</para>
+    <para style="terp_default_9">[[ (o.comment  and format(o.comment )) or removeParentNode('para') ]]</para>
+    <para style="terp_default_8">
+      <font color="white"> </font>
+    </para>
+    <para style="terp_default_9">[[ (o.payment_term and o.payment_term.note and format(o.payment_term and o.payment_term.note)) or removeParentNode('para') ]]</para>
+    <para style="terp_default_9">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="120.0,410.0" style="Table1">
+      <tr>
+        <td>
+          <para style="terp_default_Bold_9">Fiscal Position Remark : </para>
+        </td>
+        <td>
+          <para style="terp_default_9">[[ (o.fiscal_position  and o.fiscal_position.note and format(o.fiscal_position.note)) or removeParentNode('blockTable') ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="terp_default_2">
+      <font color="white"> </font>
+    </para>
+  </pto>    
+  </story>   
+  
+</document>
