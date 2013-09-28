@@ -16,7 +16,8 @@
 *csysc_extra_reports
 / *Features: Magyar számlakép.
   *Tested at: Openerp 6.1* 
-  *Note: Az rml nyelv ismerete erősen ajánlott. (A cégek adatit kézzel kell kitölteni, mert kivettem a res.company infókat kompatibilitási okokból )
+  *Note: Az rml nyelv ismerete erősen ajánlott. (A cégek adatait kézzel kell kitölteni, 
+  mert kivettem a res.company infókat kompatibilitási okokból, illetve mert nem müködtek )
 
 *csysc_inh_account_inv_tax
 / *Features: Magyar számalkép kitöltő kiegészítés.
