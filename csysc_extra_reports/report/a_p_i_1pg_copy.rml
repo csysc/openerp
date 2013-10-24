@@ -248,9 +248,9 @@
     <para style="terp_default_8">[[ setLang(o.partner_id.lang) ]]</para>  	  
 	  
 	  
-         <illustration height="27.0" width="87.0">
+     <!--    <illustration height="27.0" width="87.0">
             <image x="5.5mm" y="0" file="logo" height="27.0" width="87.0"/>
-          </illustration>	  
+          </illustration>	   -->
 
     <blockTable colWidths="270.0,200.0,4.0" style="Table_Partner_Address">
       <tr>	  

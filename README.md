@@ -12,6 +12,11 @@
 / *Features: Add a new record for the sales order report. // Áfa megjelenítése az értékesítési sorban
   *Tested at: Openerp 6.1
   *Know bugs:
+- a report visszatölti magát a mentésekből.:
+ (Ezt ki tudod kapcsolni a Beállítás/Testreszabás/Alacsony színtű objektumok/Műveletek/Jelentések menü alatt.
+Keress rá a az objektum fül alatt az account.invoice -ra, majd az eredeti és a számlamásolat reportnál kattintsd ki a "Töltse újra csatolmányból" opcíót.
+Itt tudod beállítani a céges fejlécet is ha akarod
+  )
 
 *csysc_extra_reports
 / *Features: Magyar számlakép.
